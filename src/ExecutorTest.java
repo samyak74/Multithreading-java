@@ -20,10 +20,10 @@ public class ExecutorTest {
 
     Future<Object> submit = EXECUTOR_SERVICE.submit(() -> {
       Thread.sleep(5000);
-      return "This is returned after the thread has done it's work";
+      return "This is returned after the thread has done its work";
     });
 
-    submit.cancel(true);
+    //submit.cancel(true);
 
     while (!submit.isDone()) {
       //System.out.println("task not completed yet");
