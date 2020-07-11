@@ -4,7 +4,6 @@ import java.util.concurrent.CompletableFuture;
 
 public class CompletableFutureTest {
 	public static void main(String[] args) {
-		//commit 3
 		System.out.println(Thread.currentThread().getName());
 		System.out.println("Start");
 		CompletableFuture.supplyAsync(CompletableFutureTest::doProcess)
