@@ -1,6 +1,8 @@
+package threads;
+
 public class WorkerThread implements Runnable {
   private String message;
-  public WorkerThread(String s) {
+  WorkerThread(String s) {
     this.message = s;
   }
 

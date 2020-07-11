@@ -1,5 +1,7 @@
+package threads;
+
 public class ImplementRunnable implements Runnable {
-  String param;
+  private String param;
   ImplementRunnable(String param) {
     this.param = param;
   }

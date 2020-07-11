@@ -1,5 +1,7 @@
+package threads;
+
 public class ExtendThread extends Thread {
-  String printThis;
+  private String printThis;
   ExtendThread(String param) {
     printThis = param;
   }

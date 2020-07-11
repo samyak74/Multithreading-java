@@ -1,3 +1,4 @@
+package threadSafeCollection;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

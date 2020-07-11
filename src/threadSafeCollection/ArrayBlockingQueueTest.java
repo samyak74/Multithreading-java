@@ -1,3 +1,5 @@
+package threadSafeCollection;
+
 import java.rmi.MarshalledObject;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
