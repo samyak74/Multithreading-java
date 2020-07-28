@@ -1,5 +1,7 @@
 package miscTest;
 
+import java.util.Objects;
+
 public class Geo {
 	Product p;
 
@@ -38,6 +40,21 @@ public class Geo {
 						", lat=" + lat +
 						", lon=" + lon +
 						'}';
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Geo geo = (Geo) o;
+		return Objects.equals(p, geo.p) &&
+						Objects.equals(lat, geo.lat) &&
+						Objects.equals(lon, geo.lon);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(p, lat, lon);
 	}
 
 	public Geo(Double lat, Double lon) {
